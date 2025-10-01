@@ -20,17 +20,17 @@ class CleaningQuestApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        // ChangeNotifierProvider(create: (_) => HomeViewModel()),
-        // ChangeNotifierProvider(create: (_) => MapViewModel()),
-        // ChangeNotifierProvider(create: (_) => QuestExecutionViewModel()),
-        // ChangeNotifierProvider(create: (_) => AreaDetailViewModel()),
-        // ChangeNotifierProvider(create: (_) => StatsViewModel()),
-        // ChangeNotifierProvider(create: (_) => SettingsViewModel()),
+        ChangeNotifierProvider(create: (_) => HomeViewModel()),
+        ChangeNotifierProvider(create: (_) => MapViewModel()),
+        ChangeNotifierProvider(create: (_) => QuestExecutionViewModel()),
+        ChangeNotifierProvider(create: (_) => AreaDetailViewModel()),
+        ChangeNotifierProvider(create: (_) => StatsViewModel()),
+        ChangeNotifierProvider(create: (_) => SettingsViewModel()),
       ],
       child: MaterialApp.router(
         title: '掃除の冒険者ギルド',
         theme: AppTheme.guildTheme,
-        // routerConfig: AppRoutes.router,
+        routerConfig: AppRoutes.router,
         debugShowCheckedModeBanner: false,
       ),
     );

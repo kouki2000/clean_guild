@@ -33,12 +33,10 @@ class AppTheme {
         primary: guildGold,
         secondary: guildOrange,
         surface: guildBrown,
-        background: guildBrownDark,
         error: urgentRedDark,
         onPrimary: textDark,
         onSecondary: textDark,
         onSurface: textLight,
-        onBackground: textLight,
       ),
 
       // スキャフォールド背景
@@ -57,7 +55,7 @@ class AppTheme {
           color: guildGold,
           shadows: [
             Shadow(
-              color: Colors.black.withOpacity(0.7),
+              color: Colors.black.withValues(alpha: 0.7),
               offset: const Offset(2, 2),
               blurRadius: 4,
             ),
@@ -176,7 +174,7 @@ class AppTheme {
 
       // Divider テーマ
       dividerTheme: DividerThemeData(
-        color: guildBeige.withOpacity(0.5),
+        color: guildBeige.withValues(alpha: .5),
         thickness: 2,
       ),
 
@@ -200,7 +198,7 @@ class AppTheme {
     borderRadius: BorderRadius.circular(12),
     boxShadow: [
       BoxShadow(
-        color: Colors.black.withOpacity(0.2),
+        color: Colors.black.withValues(alpha: .2),
         blurRadius: 8,
         offset: const Offset(0, 4),
       ),
@@ -218,7 +216,7 @@ class AppTheme {
     borderRadius: BorderRadius.circular(12),
     boxShadow: [
       BoxShadow(
-        color: Colors.black.withOpacity(0.2),
+        color: Colors.black.withValues(alpha: .2),
         blurRadius: 8,
         offset: const Offset(0, 4),
       ),
@@ -236,7 +234,7 @@ class AppTheme {
     borderRadius: BorderRadius.circular(12),
     boxShadow: [
       BoxShadow(
-        color: const Color(0xFFF44336).withOpacity(0.3),
+        color: const Color(0xFFF44336).withValues(alpha: .3),
         blurRadius: 15,
         offset: const Offset(0, 0),
       ),
@@ -247,8 +245,8 @@ class AppTheme {
   static BoxDecoration get guildPanel => BoxDecoration(
     gradient: LinearGradient(
       colors: [
-        guildBrownLight.withOpacity(0.8),
-        const Color(0xFF795548).withOpacity(0.9),
+        guildBrownLight.withValues(alpha: .8),
+        const Color(0xFF795548).withValues(alpha: .9),
       ],
       begin: Alignment.topLeft,
       end: Alignment.bottomRight,
@@ -257,7 +255,7 @@ class AppTheme {
     borderRadius: BorderRadius.circular(15),
     boxShadow: [
       BoxShadow(
-        color: Colors.black.withOpacity(0.3),
+        color: Colors.black.withValues(alpha: .3),
         blurRadius: 12,
         offset: const Offset(0, 5),
       ),
@@ -278,7 +276,7 @@ class AppTheme {
   // テキストシャドウ（金色）
   static List<Shadow> get goldTextShadow => [
     Shadow(
-      color: Colors.black.withOpacity(0.7),
+      color: Colors.black.withValues(alpha: .7),
       offset: const Offset(2, 2),
       blurRadius: 4,
     ),

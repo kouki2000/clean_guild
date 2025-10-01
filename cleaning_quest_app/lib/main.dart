@@ -29,7 +29,7 @@ class CleaningQuestApp extends StatelessWidget {
       ],
       child: MaterialApp.router(
         title: '掃除の冒険者ギルド',
-        // theme: AppTheme.guildTheme,
+        theme: AppTheme.guildTheme,
         // routerConfig: AppRoutes.router,
         debugShowCheckedModeBanner: false,
       ),
